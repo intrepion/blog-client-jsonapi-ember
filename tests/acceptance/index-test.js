@@ -3,10 +3,10 @@ import moduleForAcceptance from 'blog-client-jsonapi-ember/tests/helpers/module-
 
 moduleForAcceptance('Acceptance | index');
 
-test('visiting /index', function(assert) {
-  visit('/index');
+test('visiting /', function(assert) {
+  visit('/');
 
   andThen(function() {
-    assert.equal(currentURL(), '/index');
+    assert.equal(currentURL(), '/');
   });
 });
